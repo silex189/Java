@@ -16,7 +16,6 @@ public class GalToLitTable {
 				System.out.println("");
 			counter = 0;
 			}
-			// Prueba Github
 		}
 
 	}
