@@ -1,5 +1,6 @@
 .metadata
 bin/
+.vscode
 tmp/
 *.tmp
 *.bak
