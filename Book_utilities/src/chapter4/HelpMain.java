@@ -42,8 +42,6 @@ class Help {
 				System.out.println("The continue:\n");
 				System.out.println("continue; or continue label;");
 				break;
-			/*default:
-				System.out.println("Selection not found, try again");*/
 		}
 			System.out.println();
 	}
@@ -92,8 +90,6 @@ public class HelpMain {
 				if(choice == 'q') break;
 
 				System.out.println("\n");
-				
-				//System.out.println("\n");
 
 				help.helpOn(choice);
 			}
