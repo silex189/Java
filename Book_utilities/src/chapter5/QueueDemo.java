@@ -41,7 +41,7 @@ public class QueueDemo {
 	public static void main(String[] args) {
     
     Queue bigQueue = new Queue(100);
-		Queue smalQueue = new Queue(4);
+		Queue smallQueue = new Queue(4);
 		Queue emptyQueue = new Queue(3);
     int i;
 
@@ -59,7 +59,7 @@ public class QueueDemo {
 
     for(i = 0; i < 5; i++) {
       System.out.print("Attempting to store " + (char) ('Z' - i));
-      smalQueue.put( (char) ('Z' - i));
+      smallQueue.put( (char) ('Z' - i));
       System.out.println();
     }
 
@@ -67,19 +67,15 @@ public class QueueDemo {
 
     System.out.print("Contents of smallQueue: ");
     for(i = 0; i < 5; i++) {
-      System.out.print(smalQueue.get() + " ");
+      System.out.print(smallQueue.get() + " ");
 		}
 		
-		System.out.println("\nFilling empty Queue");
-		for(i = 0; i < 3; i++)
-			emptyQueue.put( (char) ('a' + i));
 		
 		System.out.println();
 
-		System.out.println("Content of empty Queue until run out");
-		for(i = 0; i < 4; i++) {
-			System.out.print(emptyQueue.get() + " ");
-		}
+		System.out.print("Content of emptyQueue");
+		System.out.print(emptyQueue.get());
+		
 
   }
 }
