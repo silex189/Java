@@ -6,6 +6,39 @@
   "configurations": [
     {
       "type": "java",
+      "name": "CodeLens (Launch) - BitwiseNotDemo",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "console": "internalConsole",
+      "stopOnEntry": false,
+      "mainClass": "chapter5.BitwiseNotDemo",
+      "args": "",
+      "projectName": "Book_utilities"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - BitwiseOperatorsTable",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "console": "internalConsole",
+      "stopOnEntry": false,
+      "mainClass": "chapter5.BitwiseOperatorsTable",
+      "args": "",
+      "projectName": "Book_utilities"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - SubstringMethod",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "console": "internalConsole",
+      "stopOnEntry": false,
+      "mainClass": "chapter5.SubstringMethod",
+      "args": "",
+      "projectName": "Book_utilities"
+    },
+    {
+      "type": "java",
       "name": "Debug (Launch)",
       "request": "launch",
       "cwd": "${workspaceFolder}",

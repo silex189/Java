@@ -28,6 +28,6 @@ public class Finalize {
 		for(object = 1; object < 10000000; object++)
 			finalizeDemo.generator(object);
 
-	}
+	} // Eclipse
 
 }
