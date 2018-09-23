@@ -9,7 +9,6 @@ public class StringOperations {
 		String string3 = "Java strings are powerfull.";
 		
 		int result, index;
-		char character;
 
 
 		System.out.println("Length of string1: " + string1.length());
