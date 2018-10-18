@@ -1,7 +1,7 @@
 package chapter6;
 
 class CallByReference {
-	int i, j;
+	private int i, j;
 
 	CallByReference(int i, int j) {
 		this.i = i;
@@ -12,6 +12,14 @@ class CallByReference {
 		callByReference.i = callByReference.i + callByReference.j;
 		callByReference.j = -callByReference.j;
 	}
+	
+	public int geti() {
+		return i;
+	}
+	
+	public int getj() {
+		return j;
+	}
 }
 
 public class ArgumentCalledByReference {
@@ -20,10 +28,10 @@ public class ArgumentCalledByReference {
 		CallByReference callByReference = new CallByReference(15, 20);
 
 		System.out.println("callByReference.i and callByReference.j before call: "
-											+ callByReference.i + " " + callByReference.j);
+											+ callByReference.geti() + " " + callByReference.getj());
 		callByReference.change(callByReference);
 		System.out.println("callByReference.i and callByReference.j after call: "
-											+ callByReference.i + " " + callByReference.j);
+											+ callByReference.geti() + " " + callByReference.getj());
 	}
 
 }
