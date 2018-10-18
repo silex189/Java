@@ -6,6 +6,17 @@
   "configurations": [
     {
       "type": "java",
+      "name": "CodeLens (Launch) - ControledArrayMain",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "console": "internalConsole",
+      "stopOnEntry": false,
+      "mainClass": "chapter6.ControledArrayMain",
+      "args": "",
+      "projectName": "Book_utilities"
+    },
+    {
+      "type": "java",
       "name": "CodeLens (Launch) - BitwiseNotDemo",
       "request": "launch",
       "cwd": "${workspaceFolder}",

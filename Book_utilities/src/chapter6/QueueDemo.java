@@ -1,21 +1,21 @@
-package chapter5;
+package chapter6;
 
 class Queue {
 
-  char Queue[];
-  int putLocker, getLocker;
+  private char queue[];
+  private int putLocker, getLocker;
 
   Queue(int size) {
-    Queue = new char[size];
+    queue = new char[size];
     putLocker = getLocker = 0;
   }
 
   void put(char character) {
-    if(putLocker == Queue.length) {
+    if(putLocker == queue.length) {
       System.out.println(" - Queue is full");
       return;
     } else
-      Queue[putLocker] = (char) character;
+      queue[putLocker] = (char) character;
       putLocker++;
       return;
   }
@@ -28,7 +28,7 @@ class Queue {
       int tmpGetLocker;
       tmpGetLocker = getLocker;
       getLocker++;
-      return Queue[tmpGetLocker];
+      return queue[tmpGetLocker];
     }
   }
 
@@ -75,6 +75,10 @@ public class QueueDemo {
 
 		System.out.print("Content of emptyQueue");
 		System.out.print(emptyQueue.get());
+		
+		Queue queueTest = new Queue(10);
+		/*queueTest.queue[9] = 99;
+		queueTest.putloc = -100;*/
 		
 
   }
