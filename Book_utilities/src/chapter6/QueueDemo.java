@@ -10,6 +10,24 @@ class Queue {
     putLocker = getLocker = 0;
   }
 
+  Queue(Queue queue) {
+    putLocker = queue.putLocker;
+    getLocker = queue.getLocker;
+    this.queue = new char[queue.queue.length];
+
+    for(int i=getLocker+1; i <= putLocker; i++)
+      this.queue[i] = queue.queue[i];
+  }
+
+  Queue(char queue[]) {
+    putLocker = 0;
+    getLocker = 0;
+    this.queue = new char[queue.length];
+
+    for(int i = 0; i <= queue.length; i++)
+      put(queue[i]);
+  }
+
   void put(char character) {
     if(putLocker == queue.length) {
       System.out.println(" - Queue is full");
@@ -76,10 +94,20 @@ public class QueueDemo {
 		System.out.print("Content of emptyQueue");
 		System.out.print(emptyQueue.get());
 		
-		Queue queueTest = new Queue(10);
+		//Queue queueTest = new Queue(10);
 		/*queueTest.queue[9] = 99;
 		queueTest.putloc = -100;*/
-		
+    
+    /*Queue queue1 = new Queue(10);
+
+    char name[] = {'T', 'o', 'm'};
+    Queue queue2 = new Queue(name);
+    
+    char ch;
+
+    for(i=0; i < 10; i++) {
+      
+    }*/
 
   }
 }
