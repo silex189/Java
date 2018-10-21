@@ -2,9 +2,8 @@ package chapter6;
 
 public class QueueDemo2 {
   public static void main(String[] args) {
-
+  
   Queue queue1 = new Queue(10);
-  char ch;
   int i;
   for(i=0; i < 10; i++)
     queue1.put((char) ('A' + i));
@@ -15,7 +14,9 @@ public class QueueDemo2 {
 
   Queue queue3 = new Queue(queue1);
 
+
   System.out.println("Contents of queue1: ");
+  char ch;
   for(i=0; i < 10; i++) {
     ch = queue1.get();
     System.out.print(ch);
@@ -32,21 +33,9 @@ public class QueueDemo2 {
   System.out.println("Contents of queue3: ");
   for(i=0; i < 10; i++) {
     ch = queue3.get();
-    System.out.println(ch);
+    System.out.print(ch);
   }
 
 
   }
 }
-
-  /*char name[] = {'T', 'o', 'm'};
-  Queue queue2 = new Queue(name);
-  
-  Queue queue1 = new Queue(10);
-  char ch;
-  int i;
-
-  for(i=0; i < 10; i++) {
-    queue1.put((char) ('A' + i));
-  }
-}*/

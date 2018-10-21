@@ -2,38 +2,38 @@ package chapter6;
 
 public class Queue {
 
-  private char queue[];
+  private char arrayQueue[];
   private int putLocker, getLocker;
 
   Queue(int size) {
-    queue = new char[size];
+    arrayQueue = new char[size];
     putLocker = getLocker = 0;
   }
 
   Queue(Queue queue) {
     this.putLocker = queue.putLocker;
     this.getLocker = queue.getLocker;
-    this.queue = new char[queue.length];
+    this.arrayQueue = new char[queue.arrayQueue.length];
 
-    for(int i=getLocker; i <= putLocker; i++)
-      this.queue[i] = queue.queue[i];
+    for(int i=0; i < queue.arrayQueue.length; i++)
+      this.arrayQueue[i] = queue.arrayQueue[i];
   }
 
   Queue(char queue[]) {
     putLocker = 0;
     getLocker = 0;
-    this.queue = new char[queue.length];
+    arrayQueue = new char[queue.length];
 
-    for(int i = 0; i <= queue.length; i++)
+    for(int i = 0; i < arrayQueue.length; i++)
       put(queue[i]);
   }
 
   void put(char character) {
-    if(putLocker == queue.length) {
+    if(putLocker == arrayQueue.length) {
       System.out.println(" - Queue is full");
       return;
     } else
-      queue[putLocker] = (char) character;
+      arrayQueue[putLocker] = (char) character;
       putLocker++;
       return;
   }
@@ -46,7 +46,7 @@ public class Queue {
       int tmpGetLocker;
       tmpGetLocker = getLocker;
       getLocker++;
-      return queue[tmpGetLocker];
+      return arrayQueue[tmpGetLocker];
     }
   }
 
