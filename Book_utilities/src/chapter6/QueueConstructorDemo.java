@@ -1,6 +1,6 @@
 package chapter6;
 
-public class QueueDemo2 {
+public class QueueConstructorDemo {
   public static void main(String[] args) {
   
   Queue queue1 = new Queue(10);

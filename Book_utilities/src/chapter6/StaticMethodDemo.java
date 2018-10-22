@@ -8,7 +8,7 @@ class StaticMeth {
 	}
 }
 
-public class StaticDemo2 {
+public class StaticMethodDemo{
 
 	public static void main(String[] args) {
 		

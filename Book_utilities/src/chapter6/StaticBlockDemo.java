@@ -20,7 +20,7 @@ class StaticBlock {
 	}
 }
 
-public class StaticDemo3 {
+public class StaticBlockDemo {
 
 	public static void main(String[] args) {
 		StaticBlock staticBlock = new StaticBlock("Inside constructor");
