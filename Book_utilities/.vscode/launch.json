@@ -6,6 +6,28 @@
   "configurations": [
     {
       "type": "java",
+      "name": "CodeLens (Launch) - DynamicShapes",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "console": "internalConsole",
+      "stopOnEntry": false,
+      "mainClass": "chapter7.DynamicShapes",
+      "args": "",
+      "projectName": "Book_utilities"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - DynamicOverloadMethods",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "console": "internalConsole",
+      "stopOnEntry": false,
+      "mainClass": "chapter7.DynamicOverloadMethods",
+      "args": "",
+      "projectName": "Book_utilities"
+    },
+    {
+      "type": "java",
       "name": "CodeLens (Launch) - Shapes",
       "request": "launch",
       "cwd": "${workspaceFolder}",

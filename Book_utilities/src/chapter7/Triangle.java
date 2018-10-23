@@ -9,12 +9,12 @@ public class Triangle extends TwoDimenssionShape {
 	}
 
 	Triangle(double value) {
-		super(value);
+		super(value,"triangle");
 		style = "filled";
 	}
 
 	Triangle(String style, double height, double width) {
-		super(width, height);
+		super(width, height, "triangle");
 		/*setHeight(height);
 		setWidth(width);*/
 		this.style = style;
