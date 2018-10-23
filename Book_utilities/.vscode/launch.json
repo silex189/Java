@@ -6,6 +6,17 @@
   "configurations": [
     {
       "type": "java",
+      "name": "CodeLens (Launch) - Shapes",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "console": "internalConsole",
+      "stopOnEntry": false,
+      "mainClass": "chapter7.Shapes",
+      "args": "",
+      "projectName": "Book_utilities"
+    },
+    {
+      "type": "java",
       "name": "CodeLens (Launch) - QuickSortDemo",
       "request": "launch",
       "cwd": "${workspaceFolder}",
