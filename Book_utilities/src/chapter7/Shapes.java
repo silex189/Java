@@ -21,21 +21,13 @@ class TwoDimessionShape {
 		this.height = twoDimessionShape.getHeight();
 	}
 
-	public double getWidth() {
-		return width;
-	}
+	public double getWidth() { return width; }
 
-	public void setWidth(double width) {
-		this.width = width;
-	}
+	public void setWidth(double width) { this.width = width; }
 
-	public double getHeight() {
-		return height;
-	}
+	public double getHeight() { return height; }
 
-	public void setHeight(double height) {
-		this.height = height;
-	}
+	public void setHeight(double height) { this.height = height; }
 
 	void showDimession() {
 		System.out.println("Width and height are " + width + " and " + height);
@@ -63,12 +55,9 @@ class Triangle extends TwoDimessionShape {
 		this.style = style;
 	}
 
-	public String getStyle() {
-		return style;
-	}
-
-	public void setStyle(String style) {
-		this.style = style;
+	Triangle(Triangle triangle) {
+		super(triangle);
+		style = triangle.style;
 	}
 
 	double area() {
@@ -76,7 +65,39 @@ class Triangle extends TwoDimessionShape {
 	}
 	
 	void showStyle() {
-		System.out.println("Triangle is " + getStyle());
+		System.out.println("Triangle is " + style);
+	}
+}
+
+class ColorTriangle extends Triangle {
+	private String color;
+
+	ColorTriangle() {
+		super();
+		color = "none";
+	}
+
+	ColorTriangle(double value) {
+		super(value);
+		color = "grey";
+	}
+
+	ColorTriangle(String color, String style, double width, double height) {
+		super(style, height, width);
+		this.color = color;
+	}
+
+	ColorTriangle(ColorTriangle colorTriangle) {
+		super(colorTriangle);
+		color = colorTriangle.color;
+	}
+
+	String getColor() {
+		return color;
+	}
+
+	void showColor() {
+		System.out.println("color is " + color);
 	}
 }
 
@@ -133,6 +154,25 @@ public class Shapes {
 		triangle3.showStyle();
 		triangle3.showDimession();
 		System.out.println("Area is " + triangle3.area());
+		
+		System.out.println();
+
+		ColorTriangle colorTriangle1 = new ColorTriangle("Blue", "outlined", 8.0, 12.0);
+		ColorTriangle colorTriangle2 = new ColorTriangle("Red", "filled", 2.0, 2.0);
+
+		System.out.println("Info for colorTriangle1: ");
+		colorTriangle1.showStyle();
+		colorTriangle1.showDimession();
+		colorTriangle1.showColor();
+		System.out.println("Area is " + colorTriangle1.area());
+
+		System.out.println();
+
+		System.out.println("Info for colorTriangle2: ");
+		colorTriangle2.showStyle();
+		colorTriangle2.showDimession();
+		colorTriangle2.showColor();
+		System.out.println("Area is " + colorTriangle2.area());
 
 	}
 }
