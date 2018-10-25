@@ -60,7 +60,7 @@ public class InterfaceQueueDemo {
 			System.out.print(ch);
 		}
 
-		System.out.print("\nStore and consume from circular queue");
+		System.out.print("\nStore and consume from circular queue: \n");
 		for(i=0; i < 20; i++) {
 			interfaceCharQueue.put((char) ('A' + i));
 			ch = interfaceCharQueue.get();

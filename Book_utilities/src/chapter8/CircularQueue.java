@@ -1,35 +1,56 @@
 package chapter8;
 
+import chapter6_Methods_And_Classes_In_Deep.Queue;
+
 public class CircularQueue implements InterfaceCharQueue {
-	private char queue[];
+	private char arrayQueue[];
 	private int putLocker, getLocker;
 
 	public CircularQueue(int size) {
-		queue = new char[size+1];
+		arrayQueue = new char[size];
 		putLocker = getLocker = 0;
 	}
 
 	@Override
-	public void put(char ch) {
-		if(putLocker+1 == getLocker | ((putLocker == queue.length-1) & (getLocker == 0))) {
+/*	public void put(char ch) {
+		if(putLocker+1 == getLocker | ((putLocker == arrayQueue.length-1) & (getLocker == 0))) {
 			System.out.println(" --- Queue is full");
 			return;
+		} else {
+				arrayQueue[putLocker] = ch;
+				putLocker++;
+				if(putLocker == arrayQueue.length) putLocker = 0;
 		}
-		queue[putLocker++] = ch;
-		if(putLocker == queue.length) putLocker = 0;
+	}*/
+
+	public void put(char ch) {
+		arrayQueue[putLocker] = ch;
+		if(putLocker+1 == arrayQueue.length) {
+			//System.out.println("A round");
+			putLocker = 0;
+		} else {
+			putLocker++;
+		}
 	}
 
+	private boolean test(){
+		return false;}
+
 	@Override
+
 	public char get() {
-		if(getLocker == putLocker) {
-			System.out.println(" --- Queue is empty");
+/*		if(getLocker == (arrayQueue.length - arrayQueue.length)) {
+			System.out.println(" --- Inside get");
 			return (char) 0;
-		}
-		char ch = queue[getLocker];
-		if(getLocker == queue.length) {
+		} else {
+		*/if(getLocker == arrayQueue.length) {
 			getLocker = 0;
 		}
-		return queue[getLocker];
+		int tmpGetLocker;
+		tmpGetLocker = getLocker;
+		getLocker++;
+		return arrayQueue[tmpGetLocker];
+		//}
 	}
 
 }
