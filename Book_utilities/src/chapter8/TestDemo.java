@@ -1,5 +1,5 @@
 package chapter8;
-
+// this test proof you can change variables inside methods
 class Test {
 	private int putLocker = 0;
 	
