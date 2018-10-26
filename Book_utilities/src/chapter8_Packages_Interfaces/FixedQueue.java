@@ -11,21 +11,18 @@ public class FixedQueue implements InterfaceCharQueue {
 		putLocker = getLocker = 0;
 	}
 
-	@Override
-	public void put(char ch) {
+	public void put(char ch)  {
+		
 		if(putLocker == queue.length) {
-			System.out.println(" --- Queue is full.");
-			return;
+			System.out.println("Queue is full.");;
 		}
 		
 		queue[putLocker++] = ch;
 
 	}
 
-	@Override
-	public char get() {
-		if(getLocker == putLocker) {
-			System.out.println(" -- Queue is empty.");
+	public char get(){
+		if(getLocker == putLocker)  {
 			return (char) 0;
 		}
 		return queue[getLocker++];
