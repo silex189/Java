@@ -1,4 +1,4 @@
-package chapter8;
+package chapter8_Packages_Interfaces;
 
 import chapter6_Methods_And_Classes_In_Deep.Queue;
 

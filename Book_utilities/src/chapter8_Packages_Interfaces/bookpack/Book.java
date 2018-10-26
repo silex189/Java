@@ -1,4 +1,4 @@
-package chapter8.bookpack;
+package chapter8_Packages_Interfaces.bookpack;
 
 public class Book {
   protected String title;

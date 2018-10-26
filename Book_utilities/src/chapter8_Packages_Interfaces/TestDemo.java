@@ -1,4 +1,4 @@
-package chapter8;
+package chapter8_Packages_Interfaces;
 // this test proof you can change variables inside methods
 class Test {
 	private int putLocker = 0;

@@ -1,4 +1,4 @@
-package chapter8;
+package chapter8_Packages_Interfaces;
 
 class ByTwos implements Series {
   int start;

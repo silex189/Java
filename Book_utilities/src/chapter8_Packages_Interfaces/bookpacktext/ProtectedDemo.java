@@ -1,6 +1,6 @@
-package chapter8.bookpacktext;
+package chapter8_Packages_Interfaces.bookpacktext;
 
-class ExtBook extends chapter8.bookpack.Book {
+class ExtBook extends chapter8_Packages_Interfaces.bookpack.Book {
 	private String publisher;
 
 	public ExtBook(String title, String author, int publicationDate, String publisher) {

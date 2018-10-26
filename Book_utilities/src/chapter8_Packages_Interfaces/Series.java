@@ -1,5 +1,5 @@
 
-package chapter8;
+package chapter8_Packages_Interfaces;
 
 public interface Series {
 	int getNext();

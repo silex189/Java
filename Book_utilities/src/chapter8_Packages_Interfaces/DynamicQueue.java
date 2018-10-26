@@ -1,4 +1,4 @@
-package chapter8;
+package chapter8_Packages_Interfaces;
 
 public class DynamicQueue implements InterfaceCharQueue {
 	private char arrayQueue[];

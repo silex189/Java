@@ -1,4 +1,4 @@
-package chapter8;
+package chapter8_Packages_Interfaces;
 
 public class FixedQueue implements InterfaceCharQueue {
 	private char queue[];
