@@ -9,7 +9,7 @@ public class RWData {
 		double d = 1023.56;
 		boolean b = true;
 
-		try (DataOutputStream dataOutput = new DataOutputStream(new FileOutputStream("testdata"))) {
+		try (DataOutputStream dataOutput = new DataOutputStream(new FileOutputStream("testing_files/testdata"))) {
 
 			System.out.println("Writing " + i);
 			dataOutput.writeInt(i);
@@ -30,7 +30,7 @@ public class RWData {
 
 		System.out.println();
 
-		try (DataInputStream dataInputStream = new DataInputStream(new FileInputStream("testdata"))) {
+		try (DataInputStream dataInputStream = new DataInputStream(new FileInputStream("testing_files/testdata"))) {
 
 			i = dataInputStream.readInt();
 			System.out.println("Reading " + i);
