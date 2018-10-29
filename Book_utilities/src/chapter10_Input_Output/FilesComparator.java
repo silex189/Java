@@ -4,16 +4,27 @@ import java.io.*;
 
 public class FilesComparator {
 	
-	static boolean camelSensitiveLetterChecker(int i, int j) {
-		if ( ((char) i + 32) != j | ((char) i - 32) != j)  
-			return true;
-		return false;
-	}
+	static int counter = 0;
 	
-	static boolean letterChecker(int i, int j) {
-		if (i != j)
+	
+	static boolean noCaseSensitiveChecker(int i, int j) {
+		if ( (char) (i + 32) != j && (char) (i - 32) != j && i != j) {
+			System.out.println("Number of first diferent letter is:  " + counter);
+			return true; //break
+		} 
+			
+		return false; 
+		
+	}
+
+
+	static boolean caseSensitiveChecker(int i, int j) {
+		if (i != j) {
+			System.out.println("Number of first diferent letter is:  " + counter);
 			return true;
+		}
 		return false;
+		
 	}
 
 	public static void main(String[] args) {
@@ -29,12 +40,13 @@ public class FilesComparator {
 			do {
 				i = fileInputStream1.read();
 				j = fileInputStream2.read();
-
-				if (camelSensitiveLetterChecker(i, j)) break;
-//			if (letterChecker(i, j)) break;
+				
+//				if (caseSensitiveChecker(i, j)) break;
+				if (noCaseSensitiveChecker(i, j)) break;
+				counter += 1;
 			} while (i != -1 && j != -1);
 
-			if (i != j)
+			if (i == j)
 				System.out.println("Files differ");
 			else
 				System.out.println("Files are the same");
