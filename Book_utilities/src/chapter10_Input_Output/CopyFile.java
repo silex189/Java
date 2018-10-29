@@ -10,7 +10,7 @@ public class CopyFile {
 		FileOutputStream fileOutputStream = null;
 
 		if (args.length != 2) {
-			System.out.println("Usage: CopyFile from to");
+			System.out.println("Usage: CopyFile from to"); // CopyFile FIRST.TXT SECOND.TXT
 			return;
 		}
 

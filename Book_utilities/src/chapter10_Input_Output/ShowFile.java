@@ -18,7 +18,7 @@ public class ShowFile {
 			do {
 				input = fileInputStream.read();
 				if (input != -1)
-					System.out.println((char) input);
+					System.out.print((char) input);
 			} while (input != -1);
 		} catch (FileNotFoundException exception) {
 			System.out.println("File not found.");
