@@ -2,21 +2,20 @@ package chapter11_Multiple_Threading;
 
 public class MyThreadSynchronized implements Runnable {
   Thread thread;
-  static SumArray sumArray = new SumArray();
+  static ArraySummator arraySummator = new ArraySummator();
   int array[];
   int answer;
 
-  MyThreadSynchronized(String name, int nums[]) {
+  MyThreadSynchronized(String name, int array[]) {
     thread = new Thread(this, name);
-    array = nums;
+    this.array = array;
     thread.start();
   }
 
   public void run() {
-    int sum;
     System.out.println(thread.getName() + " starting.");
 
-    answer = sumArray.sumArray(array);
+    answer = arraySummator.summatorMethod(array);
     System.out.println("Sum for " + thread.getName() + " is " + answer);
 
     System.out.println(thread.getName() + " terminating.");
