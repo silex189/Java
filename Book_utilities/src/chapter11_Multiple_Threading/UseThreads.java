@@ -7,9 +7,9 @@ public class UseThreads {
 
 		MyThread myThread = new MyThread("Child #1");
 
-		Thread newThread = new Thread(myThread);
+		Thread thread = new Thread(myThread);
 
-		newThread.start();
+		thread.start();
 
 		for (int i = 0; i < 50; i++) {
 			System.out.print(".");
