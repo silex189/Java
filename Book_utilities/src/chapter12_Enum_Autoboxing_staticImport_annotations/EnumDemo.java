@@ -1,9 +1,5 @@
 package chapter12_Enum_Autoboxing_staticImport_annotations;
 
-enum Transport {
-	CAR, TRUCK, AIRPLANE, TRAIN, BOAT
-}
-
 public class EnumDemo {
 
 	public static void main(String[] args) {
