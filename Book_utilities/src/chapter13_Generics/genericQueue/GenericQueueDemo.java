@@ -23,7 +23,7 @@ public class GenericQueueDemo {
 		
 		try {
 			for (int i=0; i < 5; i++) {
-				System.out.println("Getting next Integer from queue: ");
+				System.out.print("Getting next Integer from queue: ");
 				integerValue = genericQueueInteger.get();
 				System.out.println(integerValue);
 			}
@@ -42,7 +42,7 @@ public class GenericQueueDemo {
 		System.out.println("Demonstrate a queue of Doubles.");
 		try {
 			for (int i=0; i < 5; i++) {
-				System.out.println("Adding " + (double) i/2 + "to the genericQueueDouble.");
+				System.out.println("Adding " + (double) i/2 + " to the genericQueueDouble.");
 				genericQueueDouble.put((double) i/2);
 			}
 			
@@ -54,7 +54,7 @@ public class GenericQueueDemo {
 		
 		try {
 			for (int i=0; i < 5; i++) {
-				System.out.println("Getting next Double from genericQueueDouble: ");
+				System.out.print("Getting next Double from genericQueueDouble: ");
 				doubleValue = genericQueueDouble.get();
 				System.out.println(doubleValue);
 			}
