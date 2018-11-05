@@ -1,10 +1,5 @@
 package chapter14_Lambdas;
 
-@FunctionalInterface
-interface PredicateInterface {
-	boolean test(int number);
-}
-
 class PredicatesClass {
 	
 	static boolean isPrime(int number) {
