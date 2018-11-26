@@ -1,0 +1,5 @@
+package characteristics.readable.expressive.setupSermon.v1;
+
+public class MockConnector {
+
+}
