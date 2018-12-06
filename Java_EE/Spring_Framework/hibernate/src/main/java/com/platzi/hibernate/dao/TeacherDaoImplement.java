@@ -32,21 +32,8 @@ public class TeacherDaoImplement extends PlatziSession implements TeacherDao {
 //		getSession().delete(t);
 //		getSession().getTransaction().commit();
 		
-//		platziSession.getSession().delete(this.findById(idTeacher));
-//		platziSession.getSession().getTransaction().commit();
-		Session session ;
-	    Teacher teacher ;
-
-	    session = platziSession.getSession();
-	    teacher = (Teacher)session.load(Teacher.class,idTeacher);
-	    session.delete(teacher);
-
-	    //Esto hace que el delete pendiente se realice 
-	    session.flush() ;
-		
-		
-		
-		
+		platziSession.getSession().delete(this.findById(idTeacher));
+		platziSession.getSession().getTransaction().commit();
 	}
 
 	@Override
