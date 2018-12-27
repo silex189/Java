@@ -39,7 +39,7 @@ public class DataBaseConfiguration {
 	
 	public Properties hibernateProperties() {
 		Properties properties = new Properties();
-		properties.put("hibernate.dialect", "hibernate.dialect");
+		properties.put("hibernate.dialect", "org.hibernate.dialect.MySQLDialect");
 		properties.put("show_sql", "true");
 		return properties;
 	}

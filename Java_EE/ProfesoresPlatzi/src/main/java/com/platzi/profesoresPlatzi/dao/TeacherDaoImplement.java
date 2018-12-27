@@ -1,10 +1,17 @@
 package com.platzi.profesoresPlatzi.dao;
 
+import java.util.Iterator;
 import java.util.List;
 
+import javax.transaction.Transactional;
+
+import org.springframework.stereotype.Repository;
 
 import com.platzi.profesoresPlatzi.model.Teacher;
+import com.platzi.profesoresPlatzi.model.TeacherSocialMedia;
 
+@Repository
+@Transactional
 public class TeacherDaoImplement extends AbstractSession implements TeacherDao {
 
 	
@@ -18,6 +25,17 @@ public class TeacherDaoImplement extends AbstractSession implements TeacherDao {
 	public void deleteTeacherById(Long idTeacher) {
 		Teacher teacher = findById(idTeacher);
 		if (teacher != null) {
+			
+			Iterator<TeacherSocialMedia> iterator = teacher.getTeacherSocialMedia().iterator();
+			
+			while(iterator.hasNext()) {
+				TeacherSocialMedia teacherSocialMedia = iterator.next();
+				iterator.remove();
+				getSession().delete(teacherSocialMedia);
+			}
+			teacher.getTeacherSocialMedia().clear();
+			
+			
 			getSession().delete(teacher);
 		}
 
