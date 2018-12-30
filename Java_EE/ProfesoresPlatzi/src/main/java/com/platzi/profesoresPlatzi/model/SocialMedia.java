@@ -5,6 +5,8 @@ import java.util.Set;
 
 import javax.persistence.*;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 @Entity
 @Table(name="social_media")
 public class SocialMedia implements Serializable {
@@ -22,6 +24,7 @@ public class SocialMedia implements Serializable {
 
 	@OneToMany
 	@JoinColumn(name="id_social_media")
+	@JsonIgnore
 	private Set<TeacherSocialMedia> teacherSocialMedia;
 	
 	public SocialMedia() {
