@@ -71,4 +71,26 @@ public class SocialMediaDaoImplement extends AbstractSession implements SocialMe
 		return null;
 	}
 
+	@Override
+	public TeacherSocialMedia findSocialMediaByIdTeacherAndIdSocialMedia(Long idTeacher, Long idSocialMedia) {
+
+		List<Object[]> objs = getSession().createQuery(
+				"from TeacherSocialMedia tsm joins tsm.socialMedia sm "
+				+ "join tsm.teacher t where sm.idSocialMedia = :id_social_media "
+				+ "and t.idTeacher = :id_teacher")
+				.setParameter("id_social_media", idSocialMedia)
+				.setParameter("id_teacher", idTeacher).list();
+		
+		if (objs.size()>0) {
+			for (Object[] objects : objs) {
+				for (Object object : objects) {
+					if (object instanceof TeacherSocialMedia) {
+						return (TeacherSocialMedia) object;
+					}
+				}
+			}
+		}
+		return null;
+	}
+
 }
