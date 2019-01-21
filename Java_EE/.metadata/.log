@@ -8202,3 +8202,15 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-21 15:59:12.745
 !MESSAGE executing callback sts4.classpath.BEaKPoIV SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-21 16:05:35.617
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.BEaKPoIV
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-21 16:05:35.617
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.BEaKPoIV
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-21 16:05:35.617
+!MESSAGE subsribers = null
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-21 16:05:35.617
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.BEaKPoIV => OK
