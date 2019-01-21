@@ -1,2 +1,0 @@
-INDEX VERSION 1.130+E:\Escritorio\Git\Spring_Framework\.metadata\.plugins\org.eclipse.jdt.core
-1272507924.index
