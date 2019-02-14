@@ -9,24 +9,27 @@ public class FizzBuzz {
 		N = 2;
 		M = 33;
 		
+		String sequence = new String();
 		
 		do {
 			if (N % 15 == 0) {
-				System.out.print("FizzBuzz");
+				sequence += "FizzBuzz";
 			} else if (N % 5 == 0) {
-				System.out.print("Buzz");
+				sequence += "Buzz";
 			} else if (N % 3 == 0) {
-				System.out.print("Fizz");
+				sequence += "Fizz";
 			} else {
-				System.out.print(N);
+				sequence += N;
 			}
 			
 			if (N < M) {
-				System.out.print(",");
+				sequence += ",";
 			}
 			
 			N++;
 		} while (N <= M);
+		
+		System.out.println(sequence);
 		
 	}
 
