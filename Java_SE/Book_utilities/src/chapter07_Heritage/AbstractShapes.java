@@ -1,8 +1,8 @@
 package chapter07_Heritage;
 
 public class AbstractShapes {
-
 	public static void main(String[] args) {
+		
 		TwoDimenssionShape shapes[] = new TwoDimenssionShape[4];
 
 		shapes[0] = new Triangle("outlined", 8.0, 12.0);

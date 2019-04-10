@@ -13,11 +13,12 @@ class Overload2 {
 	void function(double d) {
 		System.out.println("Inside function(double): " + d);
 	}
+	
 }
 
 public class TypeConversion {
-
 	public static void main(String[] args) {
+		
 		Overload2 overload2 = new Overload2();
 		int i = 10;
 		double d = 10.1;
@@ -28,11 +29,10 @@ public class TypeConversion {
 
 		overload2.function(i);
 		overload2.function(d);
+		
 		overload2.function(b);
-
 		overload2.function(s);
 		overload2.function(f);
 
 	}
-
 }

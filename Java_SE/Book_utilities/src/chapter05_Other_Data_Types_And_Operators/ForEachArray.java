@@ -1,7 +1,6 @@
 package chapter05_Other_Data_Types_And_Operators;
 
 public class ForEachArray {
-
 	public static void main(String[] args) {
 		
 		int sum = 0;
@@ -33,5 +32,4 @@ public class ForEachArray {
 					System.out.println("Value is: " + innerIterator);
 
 	}
-
 }

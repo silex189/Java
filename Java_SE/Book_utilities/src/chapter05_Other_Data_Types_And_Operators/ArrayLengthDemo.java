@@ -1,7 +1,6 @@
 package chapter05_Other_Data_Types_And_Operators;
 
 public class ArrayLengthDemo {
-
 	public static void main(String[] args) {
 		
 		int list[] = new int[10];
@@ -28,5 +27,4 @@ public class ArrayLengthDemo {
 			System.out.print(list[i] + " ");
 
 	}
-
 }

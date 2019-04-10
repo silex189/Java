@@ -1,7 +1,6 @@
 package chapter03_Control_Instructions;
 
 public class AlphabetPrinting {
-
 	public static void main(String[] args) {
 		
 		char character = 'a';
@@ -10,8 +9,5 @@ public class AlphabetPrinting {
 			System.out.print(character + " ");
 			character++;
 		}
-
-
 	}
-
 }

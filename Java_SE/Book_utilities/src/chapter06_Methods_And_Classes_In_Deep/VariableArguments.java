@@ -1,11 +1,11 @@
 package chapter06_Methods_And_Classes_In_Deep;
 
 public class VariableArguments {
-
+	
 	static void variableArgumentsTest(int ... v) {
 		System.out.println("Number of args: " + v.length);
+		
 		System.out.println("Contents: ");
-
 		for(int i=0; i < v.length; i++)
 			System.out.println(" arg " + i + ": " + v[i]);
 
@@ -17,5 +17,5 @@ public class VariableArguments {
 		variableArgumentsTest(1, 2, 3);
 		variableArgumentsTest();
 	}
-
+	
 }

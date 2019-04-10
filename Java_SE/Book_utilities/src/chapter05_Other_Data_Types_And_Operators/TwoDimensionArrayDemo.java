@@ -1,7 +1,6 @@
 package chapter05_Other_Data_Types_And_Operators;
 
 public class TwoDimensionArrayDemo {
-
 	public static void main(String[] args) {
 		
 		int t, i;
@@ -16,5 +15,4 @@ public class TwoDimensionArrayDemo {
 		}
 
 	}
-
 }

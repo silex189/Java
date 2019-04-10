@@ -1,6 +1,7 @@
 package chapter07_Heritage;
 
 public class Triangle extends TwoDimenssionShape {
+	
 	private String style;
 
 	Triangle() {

@@ -1,7 +1,6 @@
 package chapter05_Other_Data_Types_And_Operators;
 
 public class BitshiftOperators {
-
 	public static void main(String[] args) {
 		
 		int value = 1;
@@ -29,7 +28,6 @@ public class BitshiftOperators {
 			System.out.println();
 			value = value >> 1;
 		}
-		
 	}
 
 }

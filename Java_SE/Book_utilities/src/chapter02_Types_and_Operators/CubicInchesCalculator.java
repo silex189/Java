@@ -2,13 +2,13 @@ package chapter02_Types_and_Operators;
 
 class CubicInchesCalculator {
 	  public static void main(String[] args) {
-	    long ci;
-	    long im;
+	    final long CUBIC_INCHES;
+	    final long IM;
 
-	    im = 5280 * 12;
-	    ci = im * im * im;
+	    IM = 5280 * 12;
+	    CUBIC_INCHES = IM * IM * IM;
 
-	    System.out.println("There are " + ci +
+	    System.out.println("There are " + CUBIC_INCHES +
 	                      " cubic inches in cubic mile.");
 		}
 }

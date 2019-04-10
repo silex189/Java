@@ -1,7 +1,5 @@
 package challenges;
 
-
-
 public class FizzBuzz {
 
 	public static void main(String[] args) {
@@ -18,13 +16,11 @@ public class FizzBuzz {
 				sequence += "Buzz";
 			} else if (N % 3 == 0) {
 				sequence += "Fizz";
-			} else {
-				sequence += N;
 			}
 			
-			if (N < M) {
-				sequence += ",";
-			}
+			sequence += N;
+			
+			if (N < M) sequence += ",";
 			
 			N++;
 		} while (N <= M);
@@ -32,5 +28,4 @@ public class FizzBuzz {
 		System.out.println(sequence);
 		
 	}
-
 }

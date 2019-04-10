@@ -1,7 +1,6 @@
 package chapter05_Other_Data_Types_And_Operators;
 
 public class StringSwitch {
-
 	public static void main(String[] args) {
 		
 		String command = "cancel";
@@ -22,5 +21,4 @@ public class StringSwitch {
 		}
 
 	}
-
 }

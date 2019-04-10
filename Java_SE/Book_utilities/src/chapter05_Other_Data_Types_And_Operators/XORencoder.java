@@ -1,7 +1,6 @@
 package chapter05_Other_Data_Types_And_Operators;
 
 public class XORencoder {
-
 	public static void main(String[] args) {
 		
 		String message = "This is a test";
@@ -22,5 +21,4 @@ public class XORencoder {
 		System.out.println("Decoded message: " + decodedMessage);
 
 	}
-
 }

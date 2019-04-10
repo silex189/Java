@@ -2,37 +2,37 @@ package chapter06_Methods_And_Classes_In_Deep;
 
 class Factorial {
 
-	int factorialRecursive(int n) {
-		int result;
-
-		if(n==1) return 1;
-		result = factorialRecursive(n-1) * n;
+	int recursive(int number) {
+		if(number==1) return 1;
+		
+		int result = recursive(number-1) * number;
+		
 		return result;
 	}
 
-	int factorialIterative(int n) {
-		int t, result;
-
+	int manual(int number) {
+		int times, result;
 		result = 1;
-		for(t=1; t <= n; t++) result *= t;
+		
+		for(times=1; times <= number; times++) result *= times;
+		
 		return result;
 	}
 }
 
 public class Recursion {
-
 	public static void main(String[] args) {
 		Factorial factorial = new Factorial();
 		
 		System.out.println("Factorials using recursive method.");
-		System.out.println("Factorial of 3 is " +  factorial.factorialRecursive(3));
-		System.out.println("Factorial of 4 is " +  factorial.factorialRecursive(4));
-		System.out.println("Factorial of 5 is " +  factorial.factorialRecursive(5));
+		System.out.println("Factorial of 3 is " +  factorial.recursive(3));
+		System.out.println("Factorial of 4 is " +  factorial.recursive(4));
+		System.out.println("Factorial of 5 is " +  factorial.recursive(5));
 		System.out.println();
 		
 		System.out.println("Factorials using iterative method.");
-		System.out.println("Factorial of 3 is " +  factorial.factorialIterative(3));
-		System.out.println("Factorial of 4 is " +  factorial.factorialIterative(4));
-		System.out.println("Factorial of 5 is " +  factorial.factorialIterative(5));
+		System.out.println("Factorial of 3 is " +  factorial.manual(3));
+		System.out.println("Factorial of 4 is " +  factorial.manual(4));
+		System.out.println("Factorial of 5 is " +  factorial.manual(5));
 	}
 }

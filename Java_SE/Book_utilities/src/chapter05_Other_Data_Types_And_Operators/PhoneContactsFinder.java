@@ -1,7 +1,6 @@
 package chapter05_Other_Data_Types_And_Operators;
 
 public class PhoneContactsFinder {
-
 	public static void main(String[] args) {
 		
 		String numbers[][] = { 
@@ -22,10 +21,10 @@ public class PhoneContactsFinder {
 					break;
 				}
 			}
+			
 			if(i == numbers.length)
 				System.out.println("Name not found.");
 		}
 
 	}
-
 }

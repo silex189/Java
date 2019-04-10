@@ -1,7 +1,6 @@
 package chapter05_Other_Data_Types_And_Operators;
 
 public class TwoDimensionArrayDemo2 {
-
 	public static void main(String[] args) {
 		
 		int squares[][] = {
@@ -17,12 +16,11 @@ public class TwoDimensionArrayDemo2 {
 		};
 
 		for(int i = 0; i < squares.length; i++) {
-			for(int j = 0; j < 2; j++) {
+			for(int j = 0; j < 2; j++)
 				System.out.print(squares[i][j] + " ");
-			}
+			
 			System.out.println();
 		}
 
 	}
-
 }

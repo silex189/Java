@@ -1,7 +1,6 @@
 package chapter03_Control_Instructions;
 
 public class MakePowerOf2 {
-
 	public static void main(String[] args) {
 		
 		int exponent;
@@ -18,5 +17,4 @@ public class MakePowerOf2 {
 		}
 
 	}
-
 }

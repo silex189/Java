@@ -1,8 +1,8 @@
 package chapter03_Control_Instructions;
 
 public class SqrRoot {
-
 	public static void main(String[] args) {
+
 		double num, sroot, rerr;
 
 		for(num = 1.0; num < 10; num++) {
@@ -16,5 +16,4 @@ public class SqrRoot {
 		}
 
 	}
-
 }

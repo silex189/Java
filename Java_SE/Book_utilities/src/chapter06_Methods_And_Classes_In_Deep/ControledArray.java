@@ -14,6 +14,7 @@ public class ControledArray {
 
   public int get(int index) {
     if(indexOf(index)) return array[index];
+    
     return errorValue;
   }
 
@@ -22,11 +23,13 @@ public class ControledArray {
       array[index] = value;
       return true;
     }
+    
     return false;
   }
 
   private boolean indexOf(int index) {
     if(index >= 0 & index < length) return true;
+    
     return false;
   }
 }

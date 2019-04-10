@@ -1,8 +1,8 @@
 package chapter06_Methods_And_Classes_In_Deep;
 
 public class ControledArrayMain {
-
 	public static void main(String[] args) {
+		
 		ControledArray controledArray = new ControledArray(5, -1);
 		int arrayValue;
 
@@ -24,7 +24,8 @@ public class ControledArrayMain {
 
 		for(int i = 0; i < (controledArray.length * 2); i++) {
 			arrayValue = controledArray.get(i);
-			if(arrayValue != -1) System.out.print(arrayValue + " ");
+			if(arrayValue != -1) 
+				System.out.print(arrayValue + " ");
 			else
 				System.out.println("Index " + i + " out-of-bounds");
 		}

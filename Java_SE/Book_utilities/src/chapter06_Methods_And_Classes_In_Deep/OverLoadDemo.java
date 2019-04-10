@@ -37,8 +37,8 @@ class Overload {
 }
 
 public class OverLoadDemo {
-
 	public static void main(String args[]) {
+		
 		Overload overload = new Overload();
 		int restInteger;
 		double restDouble;
@@ -50,11 +50,11 @@ public class OverLoadDemo {
 		System.out.println();
 
 		restInteger = overload.OverloadDemo(4, 6);
-		System.out.println("Result of overload.overloadDemo(4, 6): " + restInteger);
+		System.out.println("Result of overload.OverloadDemo(4, 6): " + restInteger);
 		System.out.println();
 
 		restDouble = overload.OverloadDemo(1.1, 2.32);
-		System.out.println("Result of overload.overloadDemo(1.1, 2.32): " + restDouble);
+		System.out.println("Result of overload.OverloadDemo(1.1, 2.32): " + restDouble);
 		System.out.println();
 		
 		overload.OverloadDemo((byte) 8);
@@ -66,5 +66,4 @@ public class OverLoadDemo {
 		overload.OverloadDemo(90, 64.8);
 		System.out.println();
 	}
-
 }

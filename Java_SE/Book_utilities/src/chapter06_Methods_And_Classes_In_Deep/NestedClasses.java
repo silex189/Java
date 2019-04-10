@@ -2,7 +2,7 @@ package chapter06_Methods_And_Classes_In_Deep;
 
 class Outer {
 	
-	int nums[];
+	private int nums[];
 	
 	Outer(int nums[]) {
 		this.nums = nums;
@@ -18,7 +18,7 @@ class Outer {
 
 	class Inner {
 		
-		int min() {
+		private int min() {
 			int minimum = nums[0];
 
 			for(int i=0; i < nums.length; i++)
@@ -27,7 +27,7 @@ class Outer {
 				return minimum;
 		}
 
-		int max() {
+		private int max() {
 			int maximum = nums[0];
 			for(int i=0; i < nums.length; i++)
 				if(nums[i] > maximum) maximum = nums[i];
@@ -35,24 +35,25 @@ class Outer {
 			return maximum;
 		}
 
-		int avg() {
-
+		private int avg() {
 			int average = 0;
+			
 			for(int i=0; i < nums.length; i++)
 				average += nums[i];
 
 			return average / nums.length;
 		}
+		
 	}
+	
 }
 
 public class NestedClasses {
-
 	public static void main(String[] args) {
+		
 		int intArray[] = {3, 2, 1, 5, 6, 9, 7, 8 };
 
 		Outer outer = new Outer(intArray);
 		outer.analyze();
 	}
-
 }

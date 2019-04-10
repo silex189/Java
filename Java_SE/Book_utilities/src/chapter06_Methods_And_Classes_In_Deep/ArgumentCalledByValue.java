@@ -9,8 +9,8 @@ class CallByValue {
 }
 
 public class ArgumentCalledByValue {
-
 	public static void main(String[] args) {
+		
 		CallByValue callByValue = new CallByValue();
 
 		int i = 15, j = 20;
@@ -20,5 +20,4 @@ public class ArgumentCalledByValue {
 		System.out.println("i and j after call: " + i + " " + j);
 
 	}
-
 }

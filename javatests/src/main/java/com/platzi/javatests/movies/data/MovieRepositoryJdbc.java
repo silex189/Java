@@ -2,6 +2,7 @@ package com.platzi.javatests.movies.data;
 
 import com.platzi.javatests.movies.model.Genre;
 import com.platzi.javatests.movies.model.Movie;
+
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 
@@ -45,4 +46,6 @@ public class MovieRepositoryJdbc implements MovieRepository {
 
     }
 
+    
+    JSONWriter.
 }

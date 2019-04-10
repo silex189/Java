@@ -31,14 +31,14 @@ class ErrorInfo {
 	Error getErrorInfo(int i) {
 		if(i >= 0 & i < messages.length)
 			return new Error(messages[i], howBad[i]);
-		else
-			return new Error("Invalid Error Code", 0);
+		
+		return new Error("Invalid Error Code", 0);
 	}
 }
 
 public class ReturningObjectDemo {
-
 	public static void main(String[] args) {
+		
 		ErrorInfo errorInfo = new ErrorInfo();
 		Error error;
 

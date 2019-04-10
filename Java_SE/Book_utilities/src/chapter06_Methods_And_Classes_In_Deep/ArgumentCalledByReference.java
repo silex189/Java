@@ -8,6 +8,11 @@ class CallByReference {
 		this.j = j;
 	}
 
+//	void change() {
+//		i = i + j;
+//		j = -j;
+//	}
+	
 	void change(CallByReference callByReference) {
 		callByReference.i = callByReference.i + callByReference.j;
 		callByReference.j = -callByReference.j;
@@ -23,8 +28,8 @@ class CallByReference {
 }
 
 public class ArgumentCalledByReference {
-
 	public static void main(String[] args) {
+		
 		CallByReference callByReference = new CallByReference(15, 20);
 
 		System.out.println("callByReference.i and callByReference.j before call: "

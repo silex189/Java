@@ -32,22 +32,21 @@ public class Queue {
     if(putLocker == arrayQueue.length) {
       System.out.println(" - Queue is full");
       return;
-    } else
-      arrayQueue[putLocker] = (char) character;
-      putLocker++;
-      return;
+    } 
+    
+    arrayQueue[putLocker] = (char) character;
+    putLocker++;
   }
 
   char get() {
     if(getLocker == putLocker) {
-			System.out.println("- Queue is empty");
-      return (char) 0;
-    } else {
-      int tmpGetLocker;
-      tmpGetLocker = getLocker;
-      getLocker++;
-      return arrayQueue[tmpGetLocker];
+		System.out.println("- Queue is empty");
+		return (char) 0;
     }
+    
+    int tmpGetLocker = getLocker;
+    getLocker++;
+    return arrayQueue[tmpGetLocker];
   }
 
 }

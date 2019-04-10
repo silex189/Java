@@ -69,11 +69,8 @@ class Help {
 }
 
 public class HelpMain {
+	public static void main(String[] args) throws java.io.IOException {
 
-	public static void main(String[] args) 
-		throws java.io.IOException {
-
-			
 			Help help = new Help();
 			char choice, ignore;
 
@@ -94,7 +91,5 @@ public class HelpMain {
 				help.helpOn(choice);
 			}
 			
-
 	}
-
 }

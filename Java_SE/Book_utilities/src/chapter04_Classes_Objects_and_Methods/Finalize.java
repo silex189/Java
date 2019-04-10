@@ -1,10 +1,10 @@
 package chapter04_Classes_Objects_and_Methods;
 
 class FinalizeDemo {
-	
-	int counter;
 
-	FinalizeDemo(int counter) {
+	private int counter;
+
+	public FinalizeDemo(int counter) {
 		this.counter = counter;
 	}
 
@@ -19,15 +19,12 @@ class FinalizeDemo {
 }
 
 public class Finalize {
-
 	public static void main(String[] args) {
-		
-		int object;
+
 		FinalizeDemo finalizeDemo = new FinalizeDemo(0);
 
-		for(object = 1; object < 10000000; object++)
+		for (int object = 1; object < 10000000; object++)
 			finalizeDemo.generator(object);
 
-	} // Eclipse
-
+	}
 }

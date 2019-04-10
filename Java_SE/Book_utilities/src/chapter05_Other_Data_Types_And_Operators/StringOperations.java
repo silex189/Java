@@ -1,7 +1,6 @@
 package chapter05_Other_Data_Types_And_Operators;
 
 public class StringOperations {
-
 	public static void main(String[] args) {
 		
 		String string1 = "When it comes to Web programming, Java is #1.";
@@ -14,7 +13,8 @@ public class StringOperations {
 		System.out.println("Length of string1: " + string1.length());
 
 		for(int i = 0; i < string1.length(); i++)
-		System.out.print(string1.charAt(i));
+			System.out.print(string1.charAt(i));
+		
 		System.out.println();
 
 		if(string1.equals(string2))
@@ -43,8 +43,5 @@ public class StringOperations {
 		index = string2.lastIndexOf("One");
 		System.out.println("Index of last occurrence of One: " + index);
 
-		
-
 	}
-
 }

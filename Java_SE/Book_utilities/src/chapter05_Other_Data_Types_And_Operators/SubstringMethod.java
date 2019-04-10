@@ -1,7 +1,6 @@
 package chapter05_Other_Data_Types_And_Operators;
 
 public class SubstringMethod {
-
 	public static void main(String[] args) {
 		String originalString = "Java makes the Web move.";
 
@@ -11,5 +10,4 @@ public class SubstringMethod {
 		System.out.println("subString: " + subString);
 
 	}
-
 }

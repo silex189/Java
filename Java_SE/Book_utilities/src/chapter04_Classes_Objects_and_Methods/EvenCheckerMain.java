@@ -2,21 +2,21 @@ package chapter04_Classes_Objects_and_Methods;
 
 class EvenChecker {
 
-	int number;
+	private int number;
 
-	EvenChecker(int number) {
+	public EvenChecker(int number) {
 		this.number = number;
 	}
 
-	boolean isEven(int number){
-		if((number % 2) == 0)
-			return true;
+	private boolean isEven(int number){
+		if((number % 2) == 0) return true;
+		
 		else return false;
 	}
 
-	void check() {
-		if(isEven(number))
-			System.out.println(number + " is even");
+	public void check() {
+		if(isEven(number)) System.out.println(number + " is even");
+		
 		else System.out.println(number + " is not even");
 	}
 
@@ -38,10 +38,8 @@ public class EvenCheckerMain {
 		evenChecker = new EvenChecker(10);
 		evenChecker.check();
 		
-		
 		System.out.println();
 
-		
 		for(int i = 20; i <= 100; i += 3) {
 			evenChecker = new EvenChecker(i);
 			evenChecker.check();
@@ -49,7 +47,9 @@ public class EvenCheckerMain {
 			if(counter == 5) {
 				System.out.println();
 				counter = 0;
-			} else counter++;
+			}
+			
+			counter++;
 		}
 		
 	}

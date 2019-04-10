@@ -1,7 +1,6 @@
 package chapter05_Other_Data_Types_And_Operators;
 
 public class BitwiseUpperCase {
-
 	public static void main(String[] args) {
 		
 		char character;
@@ -12,10 +11,7 @@ public class BitwiseUpperCase {
 
 			character = (char) ((int) character & 65503);
 			System.out.print(character + " ");
-
-
 		}
 
 	}
-
 }

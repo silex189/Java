@@ -2,31 +2,29 @@ package chapter04_Classes_Objects_and_Methods;
 
 class FactorChecker {
 
-	int factor;
-	int number;
+	private int factor;
+	private int number;
 
 	FactorChecker(int factor, int number){
 		this.factor = factor;
 		this.number = number;
 	}
 
-	boolean isFactor(int factor, int number) {
+	private boolean isFactor(int factor, int number) {
 		if( (number % factor) == 0) return true;
 		else return false;
 	}
 
-	void check() {
+	public void check() {
 		if(isFactor(factor, number))
 			System.out.println(factor + " is factor of " + number);
 		else
 			System.out.println(factor + " is NOT factor of " + number);
 	}
 
-
 }
 
 public class FactorCheckerMain {
-
 	public static void main(String[] args) {
 
 		FactorChecker factorChecker = new FactorChecker(2, 20);
@@ -41,9 +39,5 @@ public class FactorCheckerMain {
 		factorChecker = new FactorChecker(10, 20);
 		factorChecker.check();
 
-
-
-
 	}
-
 }

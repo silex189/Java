@@ -15,19 +15,21 @@ class Block {
   boolean sameBlock(Block block) {
     if((block.height == height) & (block.length == length) & (block.width == width))
       return true;
-    else return false;
+    
+    return false;
   }
 
   boolean sameVolume(Block block) {
     if(block.volume == volume)
       return true;
-    else return false;
+    
+    return false;
   }
 }
 
 public class BlockDemo {
-
 	public static void main(String[] args) {
+		
 		Block block1 = new Block(10, 2, 5);
 		Block block2 = new Block(10, 2, 5);
 		Block block3 = new Block(4, 5, 5);
@@ -36,5 +38,4 @@ public class BlockDemo {
 		System.out.println("block1 same dimensions as block3: " + block1.sameBlock(block3));
 		System.out.println("block1 same volume as block2: " + block1.sameVolume(block3));
 	}
-
 }
