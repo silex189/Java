@@ -2,6 +2,7 @@ package Online_Technical_tests_Testing.Lesson_04_Counting_Elements;
 
 
 import static org.junit.Assert.assertThat;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 import org.junit.Before;
 
@@ -62,14 +63,18 @@ public class MissingIntegerShould {
 		}
 		
 		missingInteger = new MissingInteger();
-		assertThat(missingInteger.solution(myArray), is(100002));
+		assertThrows(AssertionError.class, () -> {
+			missingInteger.solution(myArray);
+		});
 	}
 	
 	@Test
 	public void array_smaller_than_1() {
 		
 		missingInteger = new MissingInteger();
-		assertThat(missingInteger.solution(null), is(0));
+		assertThrows(NullPointerException.class, () -> {
+			missingInteger.solution(null);
+		});
 	}
 	
 	@Test
@@ -77,7 +82,9 @@ public class MissingIntegerShould {
 		int myArray[] = { 1000001 };
 		
 		missingInteger = new MissingInteger();
-		assertThat(missingInteger.solution(myArray), is(1000002));
+		assertThrows(AssertionError.class, () -> {
+			missingInteger.solution(myArray);
+		});
 	}
 	
 	@Test
@@ -85,7 +92,9 @@ public class MissingIntegerShould {
 		int myArray[] = { -1000001 };
 		
 		missingInteger = new MissingInteger();
-		assertThat(missingInteger.solution(myArray), is(1));
+		assertThrows(AssertionError.class, () -> {
+			missingInteger.solution(myArray);
+		});
 	}
 
 }
