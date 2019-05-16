@@ -1,4 +1,4 @@
-.metadata/.*
+.metadata/.plugins/
 Java_EE/*.metadata/.*
 bin/
 .vscode
